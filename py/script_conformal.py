@@ -102,7 +102,7 @@ def do_conformal(m, dir, out, output_type="param", output_format="obj", use_mpf=
         Th_hat[i] = n*mp.pi/60
     
     # identify the cones - used for visualization
-    is_bd = igl.is_border_vertex(v3d, f)
+    is_bd = igl.is_border_vertex(f)
     
     # need to build double mesh when it has boundary
     build_double = (np.sum(is_bd) != 0)
