@@ -100,6 +100,15 @@ Input file is expected to be a triangular manifold mesh, possibly with multiple 
 ## Reproduction
 Shell scripts to reproduce (via the python interface) the images and plots shown in the paper can be found in the figures subfolder. All subdirectories in input dataset need to be put under `data/` subfolder.
 
+## Build
+Built in both DEBUG and RELEASE options within Visual Studio 17 2022 with the following:
+* CMake 3.28.1
+* MSVC 19.42.34435.0
+* Python 3.11.13 (for running scripts within /py)
+* Windows SDK 10.0.22621.0 
+* Windows OS 10.0.26200 (Windows 11, build 26200)
+* Visual C++ v14 (used by Boost 1.82 installed in Conda environment)
+
 ## Citation
 ```
 @article{Campen:2021:Conformal,
